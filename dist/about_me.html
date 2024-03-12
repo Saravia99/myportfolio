@@ -1,43 +1,53 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en" class="scroll-smooth">
 
 <head>
-    <meta charset="UTF-8" />
+  <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Leonel Saravia - SOBRE MÌ</title>
-    <style>
-        body {
-            background-color: #000;
-            color: #fff;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+  <title>Leonel Saravia - Portfolio</title>
+  <meta name="description"
+    content="¡Saludos! Soy Leonel Saravia, un creador apasionado que fusiona la magia de la fotografía, el arte del filmmaking y la maravilla de la animación 2D/3D.">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="dist/assets/favicon.ico" />
+  <link rel="stylesheet" href="dist/output.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Alpine.js -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <!-- Start - Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;700&display=swap" rel="stylesheet">
+  <!-- End - Fonts -->
+  <!-- Start - Fancybox Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <!-- End - Fancybox Scripts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      content: ["./dist/*.{html,js}"],
+      theme: {
+        extend:
+                {
+                  fontFamily: {
+                    'nothingyoucoulddo': ['Nothing You Could Do', 'cursive'],
+                    'signika': ['Signika', 'sans-serif'],
+                  },
+                },
+      },
+      plugins: [],
+    }
+  </script>
+</head>
 
-        #main-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        .image-container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        .image {
-            width: 100%;
-            max-width: 300px;
-            margin-bottom: 20px;
-        }
-    </style>
+<body
+  class="dark:bg-black bg-white h-screen text-black dark:text-white px-5 md:px-20 opacity-0 animate-fade-in transition duration-500">
+  <!-- Navbar -->
+  <header class="flex w-full overflow-hidden pt-10 pb-1">
+    <!-- Navbar -->
     <nav id="nav" x-data="{ open: false }" role="navigation" class="w-full">
       <div class="container mx-auto flex flex-wrap items-center md:flex-no-wrap">
         <div class="mr-4 md:mr-8">
@@ -86,28 +96,195 @@
         </div>
       </div>
     </nav>
-</head>
+  </header>
+  <!-- Content -->
+  <div class="container mx-auto">
+    <h1 class="text-4xl pt-10 pb-8 font-bold">PORTFOLIO</h1>
+    <section class="text-neutral-700">
+      <div class="container w-full">
+        <div class="flex flex-wrap w-full">
+          <div class="flex w-full md:w-1/2 flex-wrap">
+            <div class="w-full md:w-1/2 p-1">
+              <div class="overflow-hidden h-full w-full">
+                <a href="https://images.unsplash.com/photo-1660243193496-29aa07965811?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  data-fancybox="gallery">
+                  <img alt="a person standing in front of a rock formation"
+                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                    src="https://images.unsplash.com/photo-1660243193496-29aa07965811?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+                </a>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 p-1">
+              <div class="overflow-hidden h-full w-full">
+                <a href="https://unsplash.com/photos/a-close-up-of-a-bug-aNVXG47VCao"
+                  data-fancybox="gallery">
+                  <img alt="a cat laying on top of a sidewalk next to the ocean"
+                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                    src="https://unsplash.com/photos/a-close-up-of-a-bug-aNVXG47VCao"/>
+                </a>
+              </div>
+            </div>
+            <div class="w-full p-1">
+              <div class="overflow-hidden h-full w-full">
+                <a href="https://unsplash.com/photos/a-person-wearing-headphones-and-playing-a-music-instrument-WxJmUsJOz1k"
+                  data-fancybox="gallery">
+                  <img alt="a man standing on a beach next to the ocean"
+                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                    src="https://unsplash.com/photos/a-person-wearing-headphones-and-playing-a-music-instrument-WxJmUsJOz1k"/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="flex w-full md:w-1/2 flex-wrap">
+            <div class="w-full p-1">
+              <div class="overflow-hidden h-full w-full">
+                <a href="https://unsplash.com/photos/a-person-wearing-a-garment-c47V0WjHdxs"
+                  data-fancybox="gallery">
+                  <img alt="a snow covered mountain with trees on the side"
+                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                    src="https://unsplash.com/photos/a-person-wearing-a-garment-c47V0WjHdxs"/>
+                </a>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 p-1">
+              <div class="overflow-hidden h-full w-full">
+                <a href="https://unsplash.com/photos/a-man-with-a-tattoo-on-his-arm-and-a-woman-with-a-drum-rwL3JfJU5So"
+                  data-fancybox="gallery">
+                  <img alt="a branch of a plant floating in a body of water"
+                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                    src="https://unsplash.com/photos/a-man-with-a-tattoo-on-his-arm-and-a-woman-with-a-drum-rwL3JfJU5So" />
+                </a>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 p-1">
+              <div class="overflow-hidden h-full w-full">
+                <a href="https://unsplash.com/photos/a-plate-of-food-on-a-wooden-table-kj_KCiNffYI"
+                  data-fancybox="gallery">
+                  <img alt="a blue sky with a lot of red and orange clouds"
+                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                    src="https://unsplash.com/photos/a-plate-of-food-on-a-wooden-table-kj_KCiNffYI" />
+                </a>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 p-1">
+              <div class="overflow-hidden h-full w-full">
+                <a href="https://unsplash.com/photos/a-plate-of-food-that-is-on-a-table-NifzfTqK1UA"
+                  data-fancybox="gallery">
+                  <img alt="a view of the ocean from the top of a hill"
+                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                    src="https://unsplash.com/photos/a-plate-of-food-that-is-on-a-table-NifzfTqK1UA" />
+                </a>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 p-1">
+              <div class="overflow-hidden h-full w-full">
+                <a href="https://unsplash.com/photos/a-steak-sandwich-with-fries-and-ketchup-on-a-plate-B2E7uN08CEk"
+                  data-fancybox="gallery">
+                  <img alt="a pheasant flying in the sky with its wings spread"
+                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                    src="https://unsplash.com/photos/a-steak-sandwich-with-fries-and-ketchup-on-a-plate-B2E7uN08CEk" />
+                </a>
+              </div>
+            </div>
+          </div>
 
-<body>
-    <div id="main-container">
-        <h1>Mi Portfolio</h1>
-        <div class="image-container">
-            <div class="image">
-                <img src="imagen1.jpg" alt="Imagen 1">
+          <div class="flex w-full md:w-1/2 flex-wrap">
+            <div class="w-full p-1">
+              <div class="overflow-hidden h-full w-full">
+                <a href="https://unsplash.com/photos/a-group-of-people-standing-on-top-of-a-beach-R7JX12KiybY"
+                  data-fancybox="gallery">
+                  <img alt="a statue of a man next to a statue of a woman"
+                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                    src="https://unsplash.com/photos/a-group-of-people-standing-on-top-of-a-beach-R7JX12KiybY" />
+                </a>
+              </div>
             </div>
-            <div class="image">
-                <img src="imagen2.jpg" alt="Imagen 2">
+            <div class="w-full md:w-1/2 p-1">
+              <div class="overflow-hidden h-full w-full">
+                <a href="https://unsplash.com/photos/XV_G9fhh38M"
+                  data-fancybox="gallery">
+                  <img alt="a city street with tall buildings in the background"
+                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                    src="https://unsplash.com/photos/XV_G9fhh38M" />
+                </a>
+              </div>
             </div>
-            <!-- Agrega más divs según sea necesario para tus imágenes -->
+            <div class="w-full md:w-1/2 p-1">
+              <div class="overflow-hidden h-full w-full">
+                <a href="https://unsplash.com/photos/ye502ksmw9Q"
+                  data-fancybox="gallery">
+                  <img alt="25 de abril bridge spanning over Tagus river"
+                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                    src="https://unsplash.com/photos/ye502ksmw9Q" />
+                </a>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 p-1">
+              <div class="overflow-hidden h-full w-full">
+                <a href="https://unsplash.com/photos/44QGbYx5qcI"
+                  data-fancybox="gallery">
+                  <img alt="a lot of lanterns floating in the air at night"
+                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                    src="https://unsplash.com/photos/44QGbYx5qcI" />
+                </a>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 p-1">
+              <div class="overflow-hidden h-full w-full">
+                <a href="https://unsplash.com/photos/a-man-wearing-a-mask-KFllezslXeQ"
+                  data-fancybox="gallery">
+                  <img alt="a flock of seaguls flying over a body of water"
+                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                    src="https://unsplash.com/photos/a-man-wearing-a-mask-KFllezslXeQ" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="flex w-full md:w-1/2 flex-wrap">
+            <div class="w-full md:w-1/2 p-1">
+              <div class="overflow-hidden h-full w-full">
+                <a href="https://unsplash.com/photos/a-man-in-a-green-shirt-and-sunglasses-sitting-on-a-ledge-dygjz81WqRg"
+                  data-fancybox="gallery">
+                  <img alt="a statue of a headless angel"
+                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                    src="https://unsplash.com/photos/a-man-in-a-green-shirt-and-sunglasses-sitting-on-a-ledge-dygjz81WqRg" />
+                </a>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 p-1">
+              <div class="overflow-hidden h-full w-full">
+                <a href="https://unsplash.com/photos/a-man-in-a-green-shirt-and-sunglasses-sitting-on-steps-4SDDfeWTb6o"
+                  data-fancybox="gallery">
+                  <img alt="Monument to the Discoveries viewed from top to bottom"
+                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                    src="https://unsplash.com/photos/a-man-in-a-green-shirt-and-sunglasses-sitting-on-steps-4SDDfeWTb6o" />
+                </a>
+              </div>
+            </div>
+            <div class="w-full p-1">
+              <div class="overflow-hidden h-full w-full">
+                <a href="https://unsplash.com/photos/3a-Mi636VZo"
+                  data-fancybox="gallery">
+                  <img
+                    alt="a group of people walking along the museum of art, architecture and technology of lisbon next to the Tagus river"
+                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                    src="https://unsplash.com/photos/3a-Mi636VZo" />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
+  </div>
+  <!-- Footer -->
   <footer>
     <div class="max-w-screen-xl py-16 mx-auto">
       <div class="grid grid-cols-1 gap-8 text-center mx-auto">
         <div>
           <p class="font-signika"><b>LEONEL SARAVIA</b></p>
           <p class="mt-4 text-sm text-gray-600 dark:text-gray-300">
-            Diriamba, Carazo. Nicaragua <br />(505)8724-3911
+            Diriamba, Carazo. Nicaragua <br/>(505)8724-3911
           </p>
           <div class="flex mx-auto">
             <div class="mx-auto space-x-6 flex mt-8 text-gray-600 dark:text-gray-300">
@@ -161,9 +338,12 @@
       </p>
     </div>
   </footer>
+  <!-- Script for the LightBox -->
+  <script>
+    Fancybox.bind("[data-fancybox]", {});
+  </script>
+  <script src="dist/fade_in.js"></script>
+  <script src="dist/menu.js"></script>
 </body>
-
-</html>
-
 
 </html>
